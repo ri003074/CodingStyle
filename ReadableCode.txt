@@ -1,0 +1,14 @@
+1章　理解しやすいコードを書く
+
+・短ければいいというものではない。
+・他人がそのコードを理解できる時間を最短にすることを目標にする。
+・そのコードを見返すのは、他人だけではない。６ヶ月後の自分かもしれない。
+・使い捨てのつもりで書いたコードが再利用される可能性も。
+
+2章　名前に情報を詰め込む
+
+・曖昧な名前は使わない。抽象より具体が大事
+send: deliver, dispatch, announce, distribute, route
+find: search, extract, locate, recover
+start: launch, create, begin, open
+make: create, setup, build, generate, compose, add, new
