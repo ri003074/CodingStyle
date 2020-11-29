@@ -1,0 +1,68 @@
+
+###言語仕様に関わるルール###
+
+#ブロック内で関数宣言してはダメ#
+// for, switchなども同様
+/* 非推奨 */
+if (x) {
+  function foo(){}
+}
+
+/* 推奨 */
+if (x) {
+  var foo = function() {}
+}
+
+###スタイルに関わるルール###
+
+#命名規則#
+ // 関数、変数、メソッド、名前空間はキャメルケース
+somethingName
+// コンストラクタはパスカルケース
+ClassName
+// 定数は大文字スネークケース
+CONSTANT_NAME
+// privateプロパティ、メソッド(protectedはpublicと同様)
+_privateMethod
+// オプション引数(必須ではないパラメータ)にはopt_プレフィックスを付ける
+opt_param
+// 可変長引数はvar_arg固定、かつ関数内ではargumentsを参照
+var_arg
+// ファイル名は全て小文字
+filename.js
+
+
+
+#配列・オブジェクトの初期化
+
+// 1行の場合(80文字)、括弧の前後には空白を挿入しない
+var obj = {a:1, b:2}
+//複数行の場合は括弧だけで1行つかう、かつインデントはスペース2つ
+var obj = {
+  foo: 1,
+  bar: 2
+}
+// キー名が長い場合、`:`を整列させない
+var obj = {
+  foo: 1,
+  barbaz: 2
+}
+
+
+
+
+
+https://qiita.com/pipi_taro/items/21da1ccc0171df85d053
+
+
+
+
+
+
+
+
+
+var, let, const 
+
+var -> なんでもあり
+let -> 再宣言NG,再代入あり

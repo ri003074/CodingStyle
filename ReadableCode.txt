@@ -1,3 +1,14 @@
+鍵となる考え方
+・コードは理解しやすくなければいけない
+・コードは他人が最短で理解できるように書かなければならない
+・名前に情報を埋め込む
+・気取った言い回しよりも、明確で正確な方が良い
+・名前が他の意味と間違えられることはないだろうかと何度も自問する
+・列をそろえる
+
+
+
+
 1章　理解しやすいコードを書く
 
 ・短ければいいというものではない。
@@ -12,3 +23,5 @@ send: deliver, dispatch, announce, distribute, route
 find: search, extract, locate, recover
 start: launch, create, begin, open
 make: create, setup, build, generate, compose, add, new
+
+
